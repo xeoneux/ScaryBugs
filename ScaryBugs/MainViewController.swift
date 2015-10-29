@@ -31,3 +31,32 @@ class MainViewController: NSViewController {
     }
     
 }
+
+// MARK: - NSTableViewDataSource
+extension MainViewController: NSTableViewDataSource {
+    func numberOfRowsInTableView(aTableView: NSTableView) -> Int {
+        return self.bugs.count
+    }
+    
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
+
+        let cellView: NSTableCellView = tableView.makeViewWithIdentifier(tableColumn!.identifier, owner: self) as! NSTableCellView
+        
+
+        if tableColumn!.identifier == "Bugs" {
+
+            let bugDoc = self.bugs[row]
+            cellView.imageView!.image = bugDoc.thumbImage
+            cellView.textField!.stringValue = bugDoc.data.title
+            return cellView
+            
+        }
+        
+        return cellView
+    }
+}
+
+// MARK: - NSTableViewDelegate
+extension MainViewController: NSTableViewDelegate {
+    
+}
