@@ -10,6 +10,8 @@
 		8433D3C21BE2D5F400964EF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433D3C11BE2D5F400964EF5 /* AppDelegate.swift */; };
 		8433D3C41BE2D5F400964EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8433D3C31BE2D5F400964EF5 /* Assets.xcassets */; };
 		8433D3C71BE2D5F400964EF5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8433D3C51BE2D5F400964EF5 /* MainMenu.xib */; };
+		84EBE3DE1BE2D6BC00A302AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBE3DC1BE2D6BC00A302AF /* MainViewController.swift */; };
+		84EBE3DF1BE2D6BC00A302AF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EBE3DD1BE2D6BC00A302AF /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		8433D3C31BE2D5F400964EF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8433D3C61BE2D5F400964EF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8433D3C81BE2D5F400964EF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EBE3DC1BE2D6BC00A302AF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		84EBE3DD1BE2D6BC00A302AF /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 		8433D3C01BE2D5F400964EF5 /* ScaryBugs */ = {
 			isa = PBXGroup;
 			children = (
+				84EBE3DC1BE2D6BC00A302AF /* MainViewController.swift */,
+				84EBE3DD1BE2D6BC00A302AF /* MainViewController.xib */,
 				8433D3C11BE2D5F400964EF5 /* AppDelegate.swift */,
 				8433D3C31BE2D5F400964EF5 /* Assets.xcassets */,
 				8433D3C51BE2D5F400964EF5 /* MainMenu.xib */,
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8433D3C41BE2D5F400964EF5 /* Assets.xcassets in Resources */,
+				84EBE3DF1BE2D6BC00A302AF /* MainViewController.xib in Resources */,
 				8433D3C71BE2D5F400964EF5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8433D3C21BE2D5F400964EF5 /* AppDelegate.swift in Sources */,
+				84EBE3DE1BE2D6BC00A302AF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +277,7 @@
 				8433D3CD1BE2D5F400964EF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
