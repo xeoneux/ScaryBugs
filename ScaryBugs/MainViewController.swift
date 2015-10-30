@@ -118,6 +118,12 @@ extension MainViewController {
     
     @IBAction func deleteBug(sender: AnyObject) {
         
+        if selectedBugDoc() != nil {
+            self.bugs.removeAtIndex(self.bugsTableView.selectedRow)
+            self.bugsTableView.removeRowsAtIndexes(NSIndexSet(index: self.bugsTableView.selectedRow), withAnimation: NSTableViewAnimationOptions.SlideRight)
+            updateDetailInfo(nil)
+        }
+        
     }
     
     @IBAction func addBug(sender: AnyObject) {
