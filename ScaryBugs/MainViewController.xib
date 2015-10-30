@@ -122,7 +122,7 @@
                     </clipView>
                     <animations/>
                     <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="8CY-Xm-fH1">
-                        <rect key="frame" x="1" y="215" width="438" height="16"/>
+                        <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </scroller>
@@ -132,6 +132,28 @@
                         <animations/>
                     </scroller>
                 </scrollView>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-9L-uhj">
+                    <rect key="frame" x="20" y="19" width="19" height="21"/>
+                    <animations/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fh9-MY-uUJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="addBug:" target="-2" id="Bc3-Yp-WrK"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7Y-I3-807">
+                    <rect key="frame" x="226" y="19" width="19" height="21"/>
+                    <animations/>
+                    <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gG0-5C-2FO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="deleteBug:" target="-2" id="3om-Zb-1Y3"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <point key="canvasLocation" x="305" y="470"/>
@@ -139,5 +161,7 @@
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
     </resources>
 </document>

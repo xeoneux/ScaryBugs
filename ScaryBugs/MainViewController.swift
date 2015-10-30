@@ -113,3 +113,14 @@ extension MainViewController: NSTableViewDelegate {
 extension MainViewController: EDStarRatingProtocol {
     
 }
+
+extension MainViewController {
+    
+    @IBAction func deleteBug(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func addBug(sender: AnyObject) {
+        
+    }
+}
