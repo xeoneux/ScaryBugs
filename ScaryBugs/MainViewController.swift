@@ -118,6 +118,12 @@ extension MainViewController: NSTableViewDelegate {
 // MARK: - EDStarRatingProtocol
 extension MainViewController: EDStarRatingProtocol {
     
+    func starsSelectionChanged(control: EDStarRating!, rating: Float) {
+        if let selectedDoc = selectedBugDoc() {
+            selectedDoc.data.rating = Double(self.bugRating.rating)
+        }
+    }
+    
 }
 
 extension MainViewController {
