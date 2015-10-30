@@ -59,6 +59,23 @@ class MainViewController: NSViewController {
         self.bugRating.rating = Float(rating)
     }
     
+    override func loadView() {
+        super.loadView()
+        
+        self.bugRating.starImage = NSImage(named: "star.png")
+        self.bugRating.starHighlightedImage = NSImage(named: "shockedface2_full.png")
+        self.bugRating.starImage = NSImage(named: "shockedface2_empty.png")
+        
+        self.bugRating.delegate = self
+        
+        self.bugRating.maxRating = 5
+        self.bugRating.horizontalMargin = 12
+        self.bugRating.editable = true
+        self.bugRating.displayMode = UInt(EDStarRatingDisplayFull)
+        
+        self.bugRating.rating = Float(0.0)
+    }
+    
 }
 
 // MARK: - NSTableViewDataSource
@@ -91,4 +108,9 @@ extension MainViewController: NSTableViewDelegate {
         let selectedDoc = selectedBugDoc()
         updateDetailInfo(selectedDoc)
     }
+}
+
+// MARK: - EDStarRatingProtocol
+extension MainViewController: EDStarRatingProtocol {
+    
 }
