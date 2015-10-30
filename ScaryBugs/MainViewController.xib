@@ -48,22 +48,22 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-7a-dUj">
-                    <rect key="frame" x="262" y="41" width="221" height="201"/>
+                    <rect key="frame" x="262" y="61" width="221" height="221"/>
                     <animations/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="IjN-RI-FnA"/>
                 </imageView>
                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs" customClass="EDStarRating">
-                    <rect key="frame" x="265" y="259" width="215" height="105"/>
+                    <rect key="frame" x="265" y="287" width="215" height="77"/>
                     <animations/>
                 </customView>
                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Bn-H5J">
-                    <rect key="frame" x="20" y="44" width="225" height="436"/>
+                    <rect key="frame" x="20" y="64" width="225" height="416"/>
                     <clipView key="contentView" ambiguous="YES" id="G8W-T4-mrA">
-                        <rect key="frame" x="1" y="1" width="223" height="434"/>
+                        <rect key="frame" x="1" y="1" width="223" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="44" rowSizeStyle="automatic" viewBased="YES" id="DYc-xn-Ub7">
-                                <rect key="frame" x="0.0" y="0.0" width="223" height="434"/>
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="414"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <animations/>
                                 <size key="intercellSpacing" width="3" height="2"/>
@@ -133,7 +133,7 @@
                     </scroller>
                 </scrollView>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPp-9L-uhj">
-                    <rect key="frame" x="20" y="19" width="19" height="21"/>
+                    <rect key="frame" x="20" y="30" width="25" height="27"/>
                     <animations/>
                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Fh9-MY-uUJ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -144,7 +144,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7Y-I3-807">
-                    <rect key="frame" x="226" y="19" width="19" height="21"/>
+                    <rect key="frame" x="220" y="30" width="25" height="27"/>
                     <animations/>
                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gG0-5C-2FO">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
