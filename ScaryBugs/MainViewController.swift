@@ -122,5 +122,13 @@ extension MainViewController {
     
     @IBAction func addBug(sender: AnyObject) {
         
+        let newDoc = ScaryBugsDoc(title: "New Bug", rating: 0.0, thumbImage: nil, fullImage: nil)
+        self.bugs.append(newDoc)
+        
+        let newRowIndex = self.bugs.count - 1
+        self.bugsTableView.insertRowsAtIndexes(NSIndexSet(index: newRowIndex), withAnimation: NSTableViewAnimationOptions.EffectFade)
+        self.bugsTableView.selectRowIndexes(NSIndexSet(index: newRowIndex), byExtendingSelection: false)
+        self.bugsTableView.scrollRowToVisible(newRowIndex)
+        
     }
 }
