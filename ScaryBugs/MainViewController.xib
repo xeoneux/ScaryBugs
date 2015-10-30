@@ -7,6 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="ScaryBugs" customModuleProvider="target">
             <connections>
+                <outlet property="bugImageView" destination="tZb-7a-dUj" id="e6f-vm-tzF"/>
+                <outlet property="bugRating" destination="mEj-Ph-XCs" id="uMR-U1-yeg"/>
+                <outlet property="bugTitleView" destination="sNW-hV-4uy" id="Rt2-6k-3tM"/>
+                <outlet property="bugsTableView" destination="DYc-xn-Ub7" id="jBo-Bf-ff4"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -28,7 +32,7 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-0a-2qz">
                     <rect key="frame" x="263" y="439" width="199" height="17"/>
                     <animations/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="k8Y-ym-oZ7">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="k8Y-ym-oZ7">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -37,7 +41,7 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-IH-D32">
                     <rect key="frame" x="263" y="360" width="199" height="17"/>
                     <animations/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="vMy-F7-end">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rating" id="vMy-F7-end">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -48,7 +52,7 @@
                     <animations/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="IjN-RI-FnA"/>
                 </imageView>
-                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs">
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs" customClass="EDStarRating">
                     <rect key="frame" x="265" y="235" width="195" height="105"/>
                     <animations/>
                 </customView>
