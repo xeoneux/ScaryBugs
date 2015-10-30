@@ -59,6 +59,12 @@ class MainViewController: NSViewController {
         self.bugRating.rating = Float(rating)
     }
     
+    func reloadSelectedRow() {
+        let rowSet = NSIndexSet(index: self.bugsTableView.selectedRow)
+        let columnSet = NSIndexSet(index: 0)
+        self.bugsTableView.reloadDataForRowIndexes(rowSet, columnIndexes: columnSet)
+    }
+    
     override func loadView() {
         super.loadView()
         
@@ -115,6 +121,15 @@ extension MainViewController: EDStarRatingProtocol {
 }
 
 extension MainViewController {
+    
+    @IBAction func bugTitleDidEndEdit(sender: AnyObject) {
+        
+        if let selectedDoc = selectedBugDoc() {
+            selectedDoc.data.title = self.bugTitleView.stringValue
+            reloadSelectedRow()
+        }
+        
+    }
     
     @IBAction func deleteBug(sender: AnyObject) {
         
