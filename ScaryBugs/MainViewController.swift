@@ -62,7 +62,6 @@ class MainViewController: NSViewController {
     override func loadView() {
         super.loadView()
         
-        self.bugRating.starImage = NSImage(named: "star.png")
         self.bugRating.starHighlightedImage = NSImage(named: "shockedface2_full.png")
         self.bugRating.starImage = NSImage(named: "shockedface2_empty.png")
         

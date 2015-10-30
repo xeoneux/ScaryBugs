@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-hV-4uy">
-                    <rect key="frame" x="265" y="421" width="195" height="22"/>
+                    <rect key="frame" x="265" y="421" width="215" height="22"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8hZ-Hz-Is8">
                         <font key="font" metaFont="system"/>
@@ -30,7 +30,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-0a-2qz">
-                    <rect key="frame" x="263" y="463" width="199" height="17"/>
+                    <rect key="frame" x="263" y="463" width="219" height="17"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="k8Y-ym-oZ7">
                         <font key="font" metaFont="system"/>
@@ -39,7 +39,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-IH-D32">
-                    <rect key="frame" x="263" y="384" width="199" height="17"/>
+                    <rect key="frame" x="263" y="384" width="219" height="17"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Rating" id="vMy-F7-end">
                         <font key="font" metaFont="system"/>
@@ -48,12 +48,12 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-7a-dUj">
-                    <rect key="frame" x="262" y="41" width="201" height="201"/>
+                    <rect key="frame" x="262" y="41" width="221" height="201"/>
                     <animations/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="IjN-RI-FnA"/>
                 </imageView>
                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs" customClass="EDStarRating">
-                    <rect key="frame" x="265" y="259" width="195" height="105"/>
+                    <rect key="frame" x="265" y="259" width="215" height="105"/>
                     <animations/>
                 </customView>
                 <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Bn-H5J">
