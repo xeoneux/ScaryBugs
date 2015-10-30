@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9059"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController" customModule="ScaryBugs" customModuleProvider="target">
@@ -17,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="476"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-hV-4uy">
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNW-hV-4uy">
                     <rect key="frame" x="265" y="397" width="195" height="22"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="8hZ-Hz-Is8">
@@ -26,7 +25,7 @@
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-0a-2qz">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlw-0a-2qz">
                     <rect key="frame" x="263" y="439" width="199" height="17"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="k8Y-ym-oZ7">
@@ -35,7 +34,7 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-IH-D32">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VF1-IH-D32">
                     <rect key="frame" x="263" y="360" width="199" height="17"/>
                     <animations/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="vMy-F7-end">
@@ -44,21 +43,18 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-7a-dUj">
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tZb-7a-dUj">
                     <rect key="frame" x="262" y="17" width="201" height="201"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="tZb-7a-dUj" secondAttribute="height" multiplier="1:1" id="rYj-IC-lGX"/>
-                    </constraints>
                     <animations/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" id="IjN-RI-FnA"/>
                 </imageView>
-                <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs">
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mEj-Ph-XCs">
                     <rect key="frame" x="265" y="235" width="195" height="105"/>
                     <animations/>
                 </customView>
-                <scrollView misplaced="YES" autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Bn-H5J">
+                <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="46" horizontalPageScroll="10" verticalLineScroll="46" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-Bn-H5J">
                     <rect key="frame" x="20" y="20" width="225" height="436"/>
-                    <clipView key="contentView" id="G8W-T4-mrA">
+                    <clipView key="contentView" ambiguous="YES" id="G8W-T4-mrA">
                         <rect key="frame" x="1" y="1" width="223" height="434"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -133,28 +129,6 @@
                     </scroller>
                 </scrollView>
             </subviews>
-            <constraints>
-                <constraint firstItem="tZb-7a-dUj" firstAttribute="top" secondItem="mEj-Ph-XCs" secondAttribute="bottom" constant="20" id="2gW-Il-6BW"/>
-                <constraint firstItem="Dlw-0a-2qz" firstAttribute="leading" secondItem="gID-Bn-H5J" secondAttribute="trailing" constant="20" id="A4v-bK-TfG"/>
-                <constraint firstItem="Dlw-0a-2qz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="GnU-nB-Xgl"/>
-                <constraint firstAttribute="trailing" secondItem="VF1-IH-D32" secondAttribute="trailing" constant="20" id="HW6-bV-fFt"/>
-                <constraint firstItem="gID-Bn-H5J" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="Jji-ga-w73"/>
-                <constraint firstAttribute="bottom" secondItem="tZb-7a-dUj" secondAttribute="bottom" constant="20" id="PCp-ZP-K0D"/>
-                <constraint firstAttribute="trailing" secondItem="tZb-7a-dUj" secondAttribute="trailing" constant="20" id="U8T-Rg-Qil"/>
-                <constraint firstItem="sNW-hV-4uy" firstAttribute="leading" secondItem="gID-Bn-H5J" secondAttribute="trailing" constant="20" id="Vv6-mm-k41"/>
-                <constraint firstItem="tZb-7a-dUj" firstAttribute="width" secondItem="DYc-xn-Ub7" secondAttribute="width" id="Ybm-GA-YPk"/>
-                <constraint firstAttribute="trailing" secondItem="Dlw-0a-2qz" secondAttribute="trailing" constant="20" id="Z9e-eJ-DDB"/>
-                <constraint firstItem="sNW-hV-4uy" firstAttribute="top" secondItem="Dlw-0a-2qz" secondAttribute="bottom" constant="20" id="ZTI-gZ-vW2"/>
-                <constraint firstAttribute="trailing" secondItem="sNW-hV-4uy" secondAttribute="trailing" constant="20" id="agI-gW-v5e"/>
-                <constraint firstItem="VF1-IH-D32" firstAttribute="leading" secondItem="gID-Bn-H5J" secondAttribute="trailing" constant="20" id="cMb-q6-Dam"/>
-                <constraint firstItem="mEj-Ph-XCs" firstAttribute="top" secondItem="VF1-IH-D32" secondAttribute="bottom" constant="20" id="dvD-2A-Tep"/>
-                <constraint firstAttribute="trailing" secondItem="mEj-Ph-XCs" secondAttribute="trailing" constant="20" id="ieh-xy-CEL"/>
-                <constraint firstItem="VF1-IH-D32" firstAttribute="top" secondItem="sNW-hV-4uy" secondAttribute="bottom" constant="20" id="kbr-ZR-aJ2"/>
-                <constraint firstItem="mEj-Ph-XCs" firstAttribute="leading" secondItem="gID-Bn-H5J" secondAttribute="trailing" constant="20" id="lJ5-3d-sDh"/>
-                <constraint firstItem="gID-Bn-H5J" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="las-c3-YGE"/>
-                <constraint firstItem="tZb-7a-dUj" firstAttribute="leading" secondItem="gID-Bn-H5J" secondAttribute="trailing" constant="20" id="nX6-E8-STo"/>
-                <constraint firstAttribute="bottom" secondItem="gID-Bn-H5J" secondAttribute="bottom" constant="20" id="u5h-Kr-6TZ"/>
-            </constraints>
             <animations/>
             <point key="canvasLocation" x="305" y="470"/>
         </customView>
