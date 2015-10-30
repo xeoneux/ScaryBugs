@@ -35,6 +35,30 @@ class MainViewController: NSViewController {
         bugs = [bug1, bug2, bug3, bug4]
     }
     
+    func selectedBugDoc() -> ScaryBugsDoc? {
+        let selectedRow = self.bugsTableView.selectedRow
+        if selectedRow >= 0 && selectedRow < self.bugs.count {
+            return self.bugs[selectedRow]
+        }
+        return nil
+    }
+    
+    func updateDetailInfo(doc: ScaryBugsDoc?) {
+        var title = ""
+        var image: NSImage?
+        var rating = 0.0
+        
+        if let scaryBugDoc = doc {
+            title = scaryBugDoc.data.title
+            image = scaryBugDoc.fullImage
+            rating = scaryBugDoc.data.rating
+        }
+        
+        self.bugTitleView.stringValue = title
+        self.bugImageView.image = image
+        self.bugRating.rating = Float(rating)
+    }
+    
 }
 
 // MARK: - NSTableViewDataSource
