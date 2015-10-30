@@ -87,5 +87,8 @@ extension MainViewController: NSTableViewDataSource {
 
 // MARK: - NSTableViewDelegate
 extension MainViewController: NSTableViewDelegate {
-    
+    func tableViewSelectionDidChange(notification: NSNotification) {
+        let selectedDoc = selectedBugDoc()
+        updateDetailInfo(selectedDoc)
+    }
 }
