@@ -137,6 +137,10 @@ extension MainViewController {
         
     }
     
+    @IBAction func changePicture(sender: AnyObject) {
+        
+    }
+    
     @IBAction func deleteBug(sender: AnyObject) {
         
         if selectedBugDoc() != nil {
