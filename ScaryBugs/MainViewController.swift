@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Quartz
 
 class MainViewController: NSViewController {
     
@@ -138,6 +139,10 @@ extension MainViewController {
     }
     
     @IBAction func changePicture(sender: AnyObject) {
+        
+        if selectedBugDoc() != nil {
+            IKPictureTaker().beginPictureTakerSheetForWindow(self.view.window, withDelegate: self, didEndSelector: "pictureTakerDidEnd", contextInfo: nil)
+        }
         
     }
     
