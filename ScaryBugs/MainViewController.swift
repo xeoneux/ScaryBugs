@@ -156,6 +156,14 @@ extension MainViewController {
         
     }
     
+    @IBAction func resetBug(sender: AnyObject) {
+        
+        setupSampleBugs()
+        updateDetailInfo(nil)
+        bugsTableView.reloadData()
+        
+    }
+    
     @IBAction func addBug(sender: AnyObject) {
         
         let newDoc = ScaryBugsDoc(title: "New Bug", rating: 0.0, thumbImage: nil, fullImage: nil)

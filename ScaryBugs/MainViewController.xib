@@ -168,6 +168,17 @@
                         <action selector="changePicture:" target="-2" id="enE-15-ElW"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I5p-3L-qqB">
+                    <rect key="frame" x="92" y="26" width="81" height="32"/>
+                    <animations/>
+                    <buttonCell key="cell" type="push" title="Reset" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="weK-5U-f8W">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="resetBug:" target="-2" id="8SY-pL-Kn4"/>
+                    </connections>
+                </button>
             </subviews>
             <animations/>
             <point key="canvasLocation" x="305" y="470"/>
