@@ -11,6 +11,8 @@
                 <outlet property="bugRating" destination="mEj-Ph-XCs" id="uMR-U1-yeg"/>
                 <outlet property="bugTitleView" destination="sNW-hV-4uy" id="Rt2-6k-3tM"/>
                 <outlet property="bugsTableView" destination="DYc-xn-Ub7" id="jBo-Bf-ff4"/>
+                <outlet property="changePictureButton" destination="JwO-pv-KhE" id="9yf-ER-e8W"/>
+                <outlet property="deleteButton" destination="P7Y-I3-807" id="ege-cO-hDI"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>

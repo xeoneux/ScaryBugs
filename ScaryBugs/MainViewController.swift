@@ -16,11 +16,15 @@ class MainViewController: NSViewController {
     @IBOutlet weak var bugImageView: NSImageView!
     @IBOutlet weak var bugRating: EDStarRating!
     
+    @IBOutlet weak var deleteButton: NSButton!
+    @IBOutlet weak var changePictureButton: NSButton!
+    
     var bugs: [ScaryBugsDoc]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        deleteButton.enabled = false
+        changePictureButton.enabled = false
     }
     
     func setupSampleBugs() {
@@ -113,6 +117,11 @@ extension MainViewController: NSTableViewDelegate {
     func tableViewSelectionDidChange(notification: NSNotification) {
         let selectedDoc = selectedBugDoc()
         updateDetailInfo(selectedDoc)
+        
+        let buttonsEnabled = (selectedBugDoc() != nil)
+        
+        deleteButton.enabled = buttonsEnabled
+        changePictureButton.enabled = buttonsEnabled
     }
 }
 
